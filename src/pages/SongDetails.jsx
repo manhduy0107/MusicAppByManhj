@@ -29,7 +29,7 @@ const SongDetails = () => {
     <div className="flex flex-col">
       <DetailsHeader artistId="" songData={songData} />
       <div className="mb-10">
-        <h2 className="text-white text-3xl font-bold">Lời bài hát:</h2>
+        <h2 className="text-white text-3xl font-bold mt-8">Lời bài hát:</h2>
         <div className="mt-5">
           {songData?.sections[1].type === 'LYRICS' ? songData.sections[1].text.map((line) => (
             <p className="text-orange-700 text-base my-1">{line}</p>
